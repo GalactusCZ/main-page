@@ -8,15 +8,19 @@
 </head>
 
 <body>
+  <h1>This is the main page</h1>
+
   <form method="post">
     <input type="submit" name="start" value="Start PC" />
   </form>
+
   <?php
   if (isset($_POST["start"])) {
     shell_exec("wakeonlan 30:9c:23:27:d6:79");
     header("Location:./");
   }
   ?>
+
 </body>
 
 </html>
