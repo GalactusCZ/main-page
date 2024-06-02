@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Startup</title>
+</head>
+
+<body>
+  <form method="post">
+    <input type="submit" name="start" value="Start PC" />
+  </form>
+  <?php
+  if (isset($_POST["start"])) {
+    shell_exec("wakeonlan 30:9c:23:27:d6:79");
+    header("Location:./");
+  }
+  ?>
+</body>
+
+</html>
