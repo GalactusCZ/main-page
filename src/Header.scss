@@ -1,0 +1,27 @@
+.menu {
+    padding: 10px;
+    background-color: red;
+
+    .logo {
+        font-size: 50px;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    .headerLinks {
+        position: absolute;
+        right: 0;
+        top: 15px;
+        list-style: none;
+        font-size: 40px;
+
+        li {
+            display: inline;
+            padding: 15px;
+
+        }
+    }
+}
