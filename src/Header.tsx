@@ -3,20 +3,17 @@ import './Header.scss'
 function Header() {
     return (
         <>
-            <div className="menu">
-                <div className="logo">
-                    <a href="https://michael-hruby.eu/">Michael Hrubý</a>
-                </div>
-
-                <ul className='headerLinks'>
-                    <li>
-                         About me
-                    </li>
-                    <li>
-                        Projects
-                    </li>
-                </ul>
-            </div>
+            <ul className='menu'>
+                <li>
+                    <a href="#">About me</a>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+                <li>
+                    <a href="#">Contacts</a>
+                </li>
+            </ul>
         </>
     )
 }

@@ -3,7 +3,13 @@ import './App.scss'
 function App() {
     return (
         <>
-            <p>Hello World!</p>
+            <div className="main">
+                <h1 className='mainHeader'>Michael Hrubý</h1>
+            
+                <div className="contents">
+                    <p>TEST</p>
+                </div>
+            </div>
         </>
     )
 }
