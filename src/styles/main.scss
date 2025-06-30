@@ -1,0 +1,12 @@
+@use 'variables';
+@use 'navbar';
+@use 'home';
+
+body {
+    background-color: $primary-color;
+    color: $secondary-color;
+
+    background-image: url(../assets/main_bg.svg);
+    background-size: cover;
+    background-repeat: repeat-y;
+}

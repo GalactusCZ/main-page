@@ -1,0 +1,21 @@
+.navbar {
+  ul {
+    list-style-type: none;
+    text-align: right;
+
+    li {
+      display: inline;
+      padding: 10px;
+
+      a {
+        color: $secondary-color;
+        font-weight: bold;
+
+      }
+
+      :hover {
+        filter: drop-shadow(0px 0px 10px $terciary-color);
+      }
+    }
+  }
+}
