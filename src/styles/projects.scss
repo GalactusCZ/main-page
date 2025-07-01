@@ -1,0 +1,47 @@
+@use './variables' as *;
+
+.projects {
+  width: 100%;
+
+  :hover {
+    background-color: $quaternary-color;
+  }
+}
+.project{
+  border: 3px solid $tertiary-color;
+  border-radius: 20px;
+  padding: 5px 1%;
+  margin-bottom: 10px;
+  display: flex;
+
+  .description, .image {
+    flex-flow: row;
+  }
+
+  .description {
+    width: 75%;
+    padding-right: 4.5%;
+  }
+
+  h3 {
+    font-size: 20pt;
+  }
+
+  p {
+    font-size: 14pt;
+  }
+
+  a {
+    text-decoration: none;
+    color: $secondary-color;
+    font-weight: bold;
+  }
+
+  .image {
+    width: 20%;
+
+    img {
+      width: 100%;
+    }
+  }
+}

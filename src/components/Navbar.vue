@@ -8,7 +8,7 @@
         <router-link to="/">HOME</router-link>
       </li>
       <li>
-        <router-link to="/">PROJECTS</router-link>
+        <router-link to="/projects">PROJECTS</router-link>
       </li>
       <li>
         <router-link to="/">CONTACTS</router-link>

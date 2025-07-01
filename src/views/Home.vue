@@ -29,7 +29,7 @@
           </p>
         </div>
         <div class="item-w2 item">
-          <h3><a href="https://hrad-bouzov.cz/en">Castle Guide (Bouzov Castle)</a></h3>
+          <h3><a href="https://hrad-bouzov.cz/en" target="_blank">Castle Guide (Bouzov Castle)</a></h3>
           <h4>July 2020 - Now</h4>
           <hr>
           <p>
@@ -40,7 +40,7 @@
 
       <div class="items">
         <div class="item-w3 item">
-          <h3><a href="https://www.logiscool.com/en/">Lector of Programming (Logiscool)</a></h3>
+          <h3><a href="https://www.logiscool.com/en/" target="_blank">Lector of Programming (Logiscool)</a></h3>
           <h4>August 2024 - June 2025</h4>
           <hr>
           <p>
@@ -48,7 +48,7 @@
           </p>
         </div>
         <div class="item-w4 item">
-          <h3><a href="https://score.cz/">Editor (SCORE)</a></h3>
+          <h3><a href="https://score.cz/" target="_blank">Editor (SCORE)</a></h3>
           <h4>November 2019 - January 2021</h4>
           <hr>
           <p>
@@ -56,7 +56,7 @@
           </p>
         </div>
         <div class="item-w5 item">
-          <h3><a href="https://www.logaritma.cz/">IT Assistant (Logaritma)</a></h3>
+          <h3><a href="https://www.logaritma.cz/" target="_blank">IT Assistant (Logaritma)</a></h3>
           <h4>October 2022</h4>
           <hr>
           <p>
@@ -71,7 +71,7 @@
 
       <div class="items">
         <div class="item-e1 item">
-          <h3><a href="https://www.muni.cz/en">Masaryk University</a></h3>
+          <h3><a href="https://www.muni.cz/en" target="_blank">Masaryk University</a></h3>
           <h4>2024 - Now</h4>
           <hr>
           <p>
@@ -79,7 +79,7 @@
           </p>
         </div>
         <div class="item-e2 item">
-          <h3><a href="https://spsemoh.cz/">SPŠEI Mohelnice</a></h3>
+          <h3><a href="https://spsemoh.cz/" target="_blank">SPŠEI Mohelnice</a></h3>
           <h4>2020 - 2024</h4>
           <hr>
           <p>
