@@ -8,10 +8,10 @@
         <router-link to="/">HOME</router-link>
       </li>
       <li>
-        <router-link to="/">HOME</router-link>
+        <router-link to="/">PROJECTS</router-link>
       </li>
       <li>
-        <router-link to="/">HOME</router-link>
+        <router-link to="/">CONTACTS</router-link>
       </li>
     </ul>
   </div>

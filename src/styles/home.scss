@@ -1,2 +1,33 @@
-body {
+@use './variables' as *;
+
+.home {
+  width: 100%;
+}
+
+.portrait {
+  margin: 0 auto;
+  width: 20%;
+
+  img {
+    width: 100%;
+    border-radius: 100%;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 40pt;
+}
+
+.contents-block {
+  margin-top: 100px;
+
+  h2 {
+    font-size: 30pt;
+  }
+
+  p {
+    font-size: 20pt;
+    width: 60%;
+  }
 }

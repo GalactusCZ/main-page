@@ -1,12 +1,22 @@
-@use 'variables';
-@use 'navbar';
-@use 'home';
+@use './variables' as *;
+@use './navbar' as *;
+@use './home' as *;
 
 body {
-    background-color: $primary-color;
-    color: $secondary-color;
+  background-color: $primary-color;
+  color: $secondary-color;
+  font-family: 'Roboto';
 
-    background-image: url(../assets/main_bg.svg);
-    background-size: cover;
-    background-repeat: repeat-y;
+  background-image: url(../assets/main_bg.svg);
+  background-size: cover;
+  background-repeat: repeat-y;
+
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.contents {
+  padding-top: 150px;
+  width: 80%;
+  margin: 0 auto;
 }

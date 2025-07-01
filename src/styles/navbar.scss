@@ -1,15 +1,22 @@
+@use './variables' as *;
+
 .navbar {
   ul {
     list-style-type: none;
-    text-align: right;
+    display: table;
+    width: 300px;
+    padding-right: 20px;
+    float: right;
 
     li {
-      display: inline;
+      display: table-cell;
+      position: relative;
       padding: 10px;
 
       a {
         color: $secondary-color;
         font-weight: bold;
+        text-decoration: none;
 
       }
 
