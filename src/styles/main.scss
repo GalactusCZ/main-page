@@ -3,6 +3,7 @@
 @use './footer' as *;
 @use './home' as *;
 @use './projects' as *;
+@use './contacts' as *;
 
 body {
   background-color: $primary-color;

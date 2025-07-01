@@ -11,7 +11,7 @@
         <router-link to="/projects">PROJECTS</router-link>
       </li>
       <li>
-        <router-link to="/">CONTACTS</router-link>
+        <router-link to="/contacts">CONTACTS</router-link>
       </li>
     </ul>
   </div>
