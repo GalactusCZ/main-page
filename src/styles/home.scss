@@ -21,13 +21,60 @@ h1 {
 
 .contents-block {
   margin-top: 100px;
+  width: 100%;
 
   h2 {
     font-size: 30pt;
   }
+}
+
+.about p {
+  font-size: 20pt;
+  width: 60%;
+}
+
+.items {
+  width: 100%;
+  display: flex;
+
+  :hover {
+    background-color: $quaternary-color;
+  }
+
+  h3 {
+    font-size: 18pt;
+    line-height: 10px;
+  }
+
+  h4 a {
+    text-decoration: none;
+    font-size: 16pt;
+    color: $quinary-color;
+  }
 
   p {
-    font-size: 20pt;
-    width: 60%;
+    font-size: 14pt;
+    padding-bottom: 20px;
+  }
+
+  .img-center {
+    width: 80%;
+    margin: 10px auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .item {
+    border: 3px solid $tertiary-color;
+    border-radius: 20px;
+    padding: 5px 1%;
+  }
+
+  .item-e1, .item-e2, .item-e3 {
+    width: 31%;
+    margin-right: 1%;
+    flex-flow: row;
   }
 }
