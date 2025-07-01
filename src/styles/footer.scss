@@ -1,0 +1,16 @@
+@use './variables' as *;
+
+footer {
+  width: 100%;
+}
+
+.footer-contents {
+  margin: 0 auto;
+  width: 80%;
+
+  p a {
+    text-decoration: none;
+    color: $secondary-color;
+    font-weight: bold;
+  }
+}

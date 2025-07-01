@@ -2,10 +2,11 @@
 
 .navbar {
   ul {
+    font-size: 15pt;
     list-style-type: none;
     display: table;
     width: 300px;
-    padding-right: 20px;
+    padding-right: 40px;
     float: right;
 
     li {
@@ -17,7 +18,6 @@
         color: $secondary-color;
         font-weight: bold;
         text-decoration: none;
-
       }
 
       :hover {
