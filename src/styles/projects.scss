@@ -45,3 +45,28 @@
     }
   }
 }
+
+/* Responsive design */
+@media only screen and (max-width: 950px) {
+  .project {
+    flex-flow: column;
+    width: 96%;
+  }
+
+  .description {
+    width: 100% !important;
+    padding-right: 0 !important;
+  }
+
+  .image {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+
+@media only screen and (max-width: 740px) {
+  .image {
+    width: 70% !important;
+  }
+}

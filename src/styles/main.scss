@@ -24,3 +24,16 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+
+/* Responsive design */
+@media only screen and (max-width: 1200px) {
+  body {
+    background-image: none;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .contents {
+    width: 95%;
+  }
+}

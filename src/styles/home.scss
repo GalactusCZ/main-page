@@ -85,3 +85,28 @@ h1 {
     flex-flow: row;
   }
 }
+
+/* Responsive design */
+@media only screen and (max-width: 1700px) {
+  .items {
+    flex-flow: column;
+    margin-bottom: 0;
+  }
+
+  .item {
+    padding: 5px 10%;
+  }
+
+  .item-w1, .item-w2, .item-w3, .item-w4, .item-w5, .item-e1, .item-e2 {
+    width: 96% !important;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .about p {
+    width: 100%;
+    font-size: 16pt;
+  }
+}
