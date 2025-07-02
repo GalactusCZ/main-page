@@ -48,6 +48,7 @@ onUnmounted(() => {
   
   img {
     width: 100%;
+    opacity: 0.5;
   }
 }
 </style>

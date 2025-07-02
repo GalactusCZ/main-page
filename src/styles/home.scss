@@ -44,7 +44,7 @@ h1 {
 
   h3 {
     font-size: 18pt;
-    line-height: 10px;
+    //line-height: 30px;
 
     a {
       color: $secondary-color;
@@ -108,5 +108,17 @@ h1 {
   .about p {
     width: 100%;
     font-size: 16pt;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .item {
+    border: none !important;
+    border-top: 3px solid $tertiary-color !important;
+    border-bottom: 3px solid $tertiary-color !important;
+  }
+
+  .item-w1, .item-w2, .item-w3, .item-w4, .item-w5, .item-e1, .item-e2 {
+    width: 92% !important;
   }
 }
