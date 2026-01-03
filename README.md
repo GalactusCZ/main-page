@@ -17,3 +17,4 @@ The website is powered by **[Vue](https://vuejs.org/)** + **[Vite](https://vite.
 2. Setup `docker buildx` to build project for different platforms with `docker buildx create --use` and `docker buildx inspect --bootstrap`.
 3. Run `docker buildx build --platform linux/amd64,linux/arm64 -t galactuscz/main-page:latest --push .` in the project folder.
 4. Deploy anywhere with docker from the Dockerhub repository `galactuscz/main-page`.
+5. Then run with `docker run -d -p xxxx:80 galactuscz/main-page`
