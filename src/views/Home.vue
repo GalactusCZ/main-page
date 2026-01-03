@@ -57,7 +57,7 @@
       
       <div v-for="pair in workExpPairs" class="items">
         <div v-for="n in pair[0]" :class="(n + pair[1] == workExp && n == 1) ? 'item item-odd' : 'item item-even'">
-          <h3><a href={{ $t(`MainWorkExpI${n + pair[1]}H`) }}>{{ $t(`MainWorkExpI${n + pair[1]}A`) }}</a></h3>
+          <h3><a :href="$t(`MainWorkExpI${n + pair[1]}H`)">{{ $t(`MainWorkExpI${n + pair[1]}A`) }}</a></h3>
           <h4>{{ $t(`MainWorkExpI${n + pair[1]}T`) }}</h4>
           <hr>
           <p>
@@ -72,7 +72,7 @@
 
       <div v-for="pair in eduPairs" class="items">
         <div v-for="n in pair[0]" :class="(n + pair[1] == workExp && n == 1) ? 'item item-odd' : 'item item-even'">
-          <h3><a href={{ $t(`MainEduI${n + pair[1]}H`) }}>{{ $t(`MainEduI${n + pair[1]}A`) }}</a></h3>
+          <h3><a :href="$t(`MainWorkExpI${n + pair[1]}H`)">{{ $t(`MainEduI${n + pair[1]}A`) }}</a></h3>
           <h4>{{ $t(`MainEduI${n + pair[1]}T`) }}</h4>
           <hr>
           <p>
