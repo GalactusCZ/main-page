@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <h1>403 - Forbidden</h1>
+  <h1>{{ $t('403H') }}</h1>
 
-  <p class="errors">It seems you don't have access to this page.</p>
+  <p class="errors">{{ $t('403P') }}</p>
 </template>

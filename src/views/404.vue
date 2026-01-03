@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <h1>404 - Page not found</h1>
+  <h1>{{ $t('404H') }}</h1>
 
-  <p class="errors">Whoops... It seems this page does not exist. If this page should exist, contact the administrator.</p>
+  <p class="errors">{{ $t('404P') }}</p>
 </template>

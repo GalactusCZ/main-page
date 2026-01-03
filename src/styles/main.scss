@@ -5,10 +5,26 @@
 @use './projects' as *;
 @use './contacts' as *;
 
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/Roboto-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../assets/fonts/Roboto-Bold.woff2') format('woff2');
+}
+
 body {
   background-color: $primary-color;
   color: $secondary-color;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 
   background-image: url(../assets/main_bg.svg);
   background-size: cover;
