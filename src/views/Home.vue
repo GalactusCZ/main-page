@@ -4,7 +4,7 @@
 <template>
   <div class="home">
     <div class="portrait">
-      <img src="../assets/placeholder.jpg" alt="Portrait">
+      <img src="../assets/profile.jpg" alt="Portrait">
     </div>
 
     <h1>Michael Hrubý</h1>
@@ -12,7 +12,7 @@
     <div class="about contents-block">
       <h2>About me</h2>
       <p>
-        Hi, my name is Michael and I am a 20 year old student of Computer science. I enjoy tinkering with hardware and software and I love to learn about new things in my field of study.
+        Hi, my name is Michael and I&nbsp;am a&nbsp;student of Computer science. I&nbsp;enjoy tinkering with hardware and software and I&nbsp;love to learn about new things in my field of study.
       </p>
     </div>
 
@@ -21,11 +21,11 @@
 
       <div class="items">
         <div class="item-w1 item">
-          <h3><a href="#">QA Tester (Unreal Assurance)</a></h3>
+          <h3><a href="https://greatlink.io/">QA Tester (Greatlink)</a></h3>
           <h4>May 2025 - Now</h4>
           <hr>
           <p>
-            Writing automation tests for Unreal Engine 5 in C++.
+            Writing unit and smoke tests for Unreal Engine 5 in C++.
           </p>
         </div>
         <div class="item-w2 item">
@@ -75,7 +75,7 @@
           <h4>2024 - Now</h4>
           <hr>
           <p>
-            Going for a college degree in programming and app development at the Faculty of Informatics.
+            Going for a&nbsp;college degree in programming and app development at the Faculty of Informatics.
           </p>
         </div>
         <div class="item-e2 item">
