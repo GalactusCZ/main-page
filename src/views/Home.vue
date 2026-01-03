@@ -33,7 +33,7 @@
           <h4>July 2020 - Now</h4>
           <hr>
           <p>
-            Guiding tours of tourists trough the castle and informing them about the castles history.
+            Guiding tours of tourists through the castle and informing them about the castle's history.
           </p>
         </div>
       </div>
@@ -48,19 +48,19 @@
           </p>
         </div>
         <div class="item-w4 item">
-          <h3><a href="https://score.cz/" target="_blank">Editor (SCORE)</a></h3>
-          <h4>November 2019 - January 2021</h4>
-          <hr>
-          <p>
-            Writing gaming news articles and reviews for the gaming magazine SCORE.
-          </p>
-        </div>
-        <div class="item-w5 item">
-          <h3><a href="https://www.logaritma.cz/" target="_blank">IT Assistant (Logaritma)</a></h3>
+          <h3><a href="https://www.logaritma.cz/" target="_blank">IT Assistant (Logaritma s.r.o.)</a></h3>
           <h4>October 2022</h4>
           <hr>
           <p>
-            Helping as an intern with the common tasks an IT assistant has to deal with on daily basis.
+            Helping as an intern with the common tasks an IT assistant has to deal with on a daily basis.
+          </p>
+        </div>
+        <div class="item-w5 item">
+          <h3><a href="https://score.cz/" target="_blank">Editor (Gaming Magazine SCORE)</a></h3>
+          <h4>November 2019 - January 2021</h4>
+          <hr>
+          <p>
+            Writing gaming news articles and reviews.
           </p>
         </div>
       </div>
@@ -72,7 +72,7 @@
       <div class="items">
         <div class="item-e1 item">
           <h3><a href="https://www.muni.cz/en" target="_blank">Masaryk University</a></h3>
-          <h4>2024 - Now</h4>
+          <h4>September 2024 - Now</h4>
           <hr>
           <p>
             Going for a&nbsp;college degree in programming and app development at the Faculty of Informatics.
@@ -80,10 +80,10 @@
         </div>
         <div class="item-e2 item">
           <h3><a href="https://spsemoh.cz/" target="_blank">SPŠEI Mohelnice</a></h3>
-          <h4>2020 - 2024</h4>
+          <h4>September 2020 - June 2024</h4>
           <hr>
           <p>
-            Computer science oriented high school ended with Maturita exam.
+            Computer science oriented high school ended with the Maturita exam.
           </p>
         </div>
       </div>
