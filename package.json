@@ -5,18 +5,20 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite-ssg build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.5.26",
+    "vue": "^3.5.29",
     "vue-i18n": "^11.2.8",
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^6.0.3",
-    "sass": "^1.97.1",
-    "vite": "^7.3.0"
+    "@vitejs/plugin-vue": "^6.0.4",
+    "@vueuse/head": "^2.0.0",
+    "sass": "^1.97.3",
+    "vite": "^7.3.1",
+    "vite-ssg": "^28.3.0"
   },
   "trustedDependencies": [
     "@parcel/watcher"

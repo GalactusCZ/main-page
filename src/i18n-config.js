@@ -5,10 +5,13 @@ import cs from './locales/cs.json'
 import en from './locales/en.json'
 
 const supportedLocales = ['cs', 'en']
+let savedLang = 'en';
 
-let savedLang = localStorage.getItem('lang')
+if (typeof window !== 'undefined') {
+  savedLang = localStorage.getItem('lang')
+}
 
-const userLang = navigator.language.split('-')[0]
+const userLang = navigator.language ? navigator.language.split('-')[0] : 'en';
 
 const initialLocale = savedLang || (supportedLocales.includes(userLang) ? userLang : 'en')
 

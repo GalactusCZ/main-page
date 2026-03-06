@@ -1,5 +1,5 @@
 # Use Bun to build
-FROM oven/bun AS builder
+FROM --platform=$BUILDPLATFORM oven/bun AS builder
 WORKDIR /app
 COPY . .
 RUN bun install

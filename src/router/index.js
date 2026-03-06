@@ -5,7 +5,7 @@ import Contacts from '../views/Contacts.vue'
 import Forbidden from '../views/403.vue'
 import NotFound from '../views/404.vue'
 
-const routes = [
+export const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/projects', name: 'Projects', component: Projects },
   { path: '/contacts', name: 'Contacts', component: Contacts },
@@ -13,9 +13,9 @@ const routes = [
   { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound }
 ]
 
-const router = createRouter({
-  history: createWebHistory(),
-  routes
-})
+// const router = createRouter({
+//   history: createWebHistory(),
+//   routes
+// })
 
-export default router
+// export default router
