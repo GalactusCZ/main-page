@@ -1,9 +1,12 @@
 <script setup>
   import { useHead } from '@vueuse/head'
   import { useI18n } from 'vue-i18n'
+  import { useRoute } from 'vue-router'
 
-  const projects = 2
+  const route = useRoute()
+  const siteOrigin = 'https://michael-hruby.eu'
   const { t } = useI18n()
+  const projects = 2
 
   // Sync language
   useHead({
@@ -13,6 +16,12 @@
         name: 'description', 
         content: t('ProjectsD')
       }
+    ],
+    link: [
+      {
+        rel: 'canonical',
+        href: `${siteOrigin}${route.path}`,
+      },
     ],
     htmlAttrs: {
       lang: useI18n().locale.value
