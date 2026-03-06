@@ -1,5 +1,23 @@
 <script setup>
-const projects = 2
+  import { useHead } from '@vueuse/head'
+  import { useI18n } from 'vue-i18n'
+
+  const projects = 2
+  const { t } = useI18n()
+
+  // Sync language
+  useHead({
+    title: 'Michael Hrubý | ' + t('ProjectsH'),
+    meta: [
+      { 
+        name: 'description', 
+        content: t('ProjectsD')
+      }
+    ],
+    htmlAttrs: {
+      lang: useI18n().locale.value
+    }
+  })
 </script>
 
 <template>

@@ -1,4 +1,6 @@
 {
+    "MainH": "Portfolio & IT Projekty",
+    "MainD": "Jsem studentem IT a rád pracuji na projektech zaměřených na vývoj webů a her.",
     "MainAboutH": "O mě",
     "MainAboutP": "Rád pracuji na IT projektech zaměřených na vývoj webů a\u00A0her. Baví mě se neustále vzdělávat v\u00A0moderních technologiích a\u00A0sledovat aktuální trendy v\u00A0oboru.",
     "MainWorkExpH": "Pracovní zkušenosti",
@@ -32,6 +34,7 @@
     "MainEduI2T": "Září 2020 - Červen 2024",
     "MainEduI2P": "Čtyři roky středoškolského studia zakončené státní maturitní zkouškou.",
     "ProjectsH": "Mé projekty",
+    "ProjectsD": "Pojďte si prohlédnout mé projekty.",
     "ProjectsI1A": "Česká Lokalizace pro RealRTCW",
     "ProjectsI1H": "https://github.com/GalactusCZ/realrtcw-czech",
     "ProjectsI1P": "Společně s\u00A0testery <b>Jouklik</b> a\u00A0<b>KillerSlovakia</b> a\u00A0 samozřejmě také se skupinou <a href='https://fenixprodabing.cz/' target='_blank'>Fénix ProDabing</a> jsme sestavili kompletní lokalizaci pro mod RealRTCW, který remasteruje klasickou hru Return to Castle Wolfenstein a\u00A0navrací určité části, které byly odstraněny z\u00A0hlavního vydání.",
@@ -43,6 +46,7 @@
     "ProjectsI2I": "/img/project_webpage.png",
     "ProjectsI2Alt": "Webová Stránka",
     "ContactsH": "Kontakty",
+    "ContactsD": "Mé kontaktní údaje, sociální sítě a životopisy.",
     "ContactsResume": "Životopis",
     "ContactsEN": "Anglicky",
     "ContactsCZ": "Česky",
@@ -53,5 +57,6 @@
     "403H": "403 - Přístup zamítnut",
     "403P": "Zdá se, že k\u00A0této stránce nemáte přístup.",
     "404H": "404 - Stránka nenalezena",
+    "404D": "Ajajaj... Zdá se, že tato stránka neexistuje.",
     "404P": "Ajajaj... Zdá se, že tato stránka neexistuje. Pokud by tato stránka měla existovat, kontaktujte administrátora."
 }

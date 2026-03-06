@@ -1,5 +1,23 @@
 <script setup>
   import { computed } from 'vue'
+  import { useHead } from '@vueuse/head'
+  import { useI18n } from 'vue-i18n'
+
+  const { t } = useI18n()
+
+  // Sync language
+  useHead({
+    title: 'Michael Hrubý | ' + t('MainH'),
+    meta: [
+      { 
+        name: 'description', 
+        content: t('MainD')
+      }
+    ],
+    htmlAttrs: {
+      lang: useI18n().locale.value
+    }
+  })
 
   const workExp = 5
   const education = 2

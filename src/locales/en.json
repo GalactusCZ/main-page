@@ -1,4 +1,6 @@
 {
+    "MainH": "Michael Hrubý | Portfolio & IT Projects",
+    "MainD": "I enjoy working on IT projects focused on web development and game development. Come follow my journey as a Computer Science student.",
     "MainAboutH": "About me",
     "MainAboutP": "I\u00A0enjoy working on IT projects focused on web development and game development. I\u00A0also enjoy learning new things in the field of Computer Science.",
     "MainWorkExpH": "Work experience",
@@ -32,6 +34,7 @@
     "MainEduI2T": "September 2020 - June 2024",
     "MainEduI2P": "Computer science oriented high school ended with the Maturita exam.",
     "ProjectsH": "My projects",
+    "ProjectsD": "Come see my personal projects.",
     "ProjectsI1A": "Czech Localisation for RealRTCW",
     "ProjectsI1H": "https://github.com/GalactusCZ/realrtcw-czech",
     "ProjectsI1P": "With the help of testers <b>Jouklik</b> and <b>KillerSlovakia</b> and of course <a href='https://fenixprodabing.cz/' target='_blank'>Fénix ProDabing</a>, I\u00A0have worked to get Czech localisation into the amazing mod for Return to Castle Wolfenstein, RealRTCW, which aims to modernize the games graphics and restore some of it's parts, that were almost lost to time.",
@@ -43,6 +46,7 @@
     "ProjectsI2I": "/img/project_webpage.png",
     "ProjectsI2Alt": "Webpage",
     "ContactsH": "Contacts",
+    "ContactsD": "My contacts, socials and resumes.",
     "ContactsResume": "Resume",
     "ContactsEN": "English",
     "ContactsCZ": "Czech",
@@ -53,5 +57,6 @@
     "403H": "403 - Forbidden",
     "403P": "It seems you don't have access to this page.",
     "404H": "404 - Page not found",
+    "404D": "Whoops... It seems this page does not exist.",
     "404P": "Whoops... It seems this page does not exist. If this page should exist, contact the administrator."
 }
