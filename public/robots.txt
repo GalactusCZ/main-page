@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://me.michael-hruby.eu/sitemap.xml
+Sitemap: https://michael-hruby.eu/sitemap.xml
