@@ -25,7 +25,7 @@ export default defineConfig({
     script: 'async',
     formatting: 'minify',
     includedRoutes() {
-      return [...paths, '/403', '/en/403']
+      return [...paths, '/', '/403', '/en/403']
     },
   }
 })
