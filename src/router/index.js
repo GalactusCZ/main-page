@@ -18,5 +18,5 @@ export const routes = [
   { path: '/en/contacts', name: 'ContactsEn', component: Contacts },
   { path: '/en/403', name: 'ForbiddenEn', component: Forbidden },
 
-  { path: '/en/:pathMatch(.*)*', name: 'NotFound', component: NotFound }
+  { path: '/:pathMatch(.*)*', name: 'NotFoundEn', component: NotFound }
 ]
