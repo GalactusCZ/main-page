@@ -41,6 +41,16 @@ body {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: underline;
+  color: $secondary-color;
+  font-weight: bold;
+}
+
+a:hover {
+  color: $tertiary-color;
+}
+
 .errors {
   font-size: 20pt;
 }

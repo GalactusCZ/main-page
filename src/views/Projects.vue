@@ -24,9 +24,10 @@
   <h1>{{ $t('ProjectsH') }}</h1>
 
   <div class="projects">
-    <div v-for="n in projects" class="project">
+    <a v-for="n in projects" :href="$t(`ProjectsI${n}H`)" target="_blank">
+    <div class="project">
       <div class="description">
-        <h3><a :href="$t(`ProjectsI${n}H`)" target="_blank">{{ $t(`ProjectsI${n}A`) }}</a></h3>
+        <h3>{{ $t(`ProjectsI${n}A`) }}</h3>
         <hr>
         <p v-html="$t(`ProjectsI${n}P`)"></p>
       </div>
@@ -34,5 +35,6 @@
         <img :src="$t(`ProjectsI${n}I`)" :alt="$t(`ProjectsI${n}Alt`)">
       </div>
     </div>
+    </a>
   </div>
 </template>
