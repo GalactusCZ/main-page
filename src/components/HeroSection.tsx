@@ -98,6 +98,18 @@ export default function HeroSection({ lang }: { lang: 'en' | 'cs' }) {
                 <Icon icon="lucide:linkedin" className="h-4 w-4 mr-2" />
                 LinkedIn
               </motion.a>
+
+              <motion.a
+                href={data.resumeLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
+                variants={childVariants}
+                whileHover={{ scale: 1.05, color: "#4b5563" }}
+              >
+                <Icon icon="lucide:paperclip" className="h-4 w-4 mr-2" />
+                {data.resume}
+              </motion.a>
             </motion.div>
           </div>
 

@@ -47,6 +47,8 @@ export const personalInfo = {
     email: "galactus2121@gmail.com",
     github: "https://github.com/GalactusCZ",
     linkedin: "https://www.linkedin.com/in/michael-hrub%C3%BD-b3a0542a8/",
+    resume: "Resume",
+    resumeLink: "https://michael-hruby.eu/michael-hruby-english.pdf",
     profilePicture: "/profile.png",
     heroDescription:
       "A passionate student of Programming and App development at the Masaryk university. I enjoy working on IT projects focused on web and game development. I also like to learn new things in the field of Computer Science.",
@@ -58,6 +60,8 @@ export const personalInfo = {
     email: "galactus2121@gmail.com",
     github: "https://github.com/GalactusCZ",
     linkedin: "https://www.linkedin.com/in/michael-hrub%C3%BD-b3a0542a8/",
+    resume: "Životopis",
+    resumeLink: "https://michael-hruby.eu/michael-hruby-czech.pdf",
     profilePicture: "/profile.png",
     heroDescription:
       "Nadšený student Programování a Vývoje Aplikací na Masarykově univerzitě. Rád pracuji na IT projektech zaměřených na vývoj webů a her. Baví mě se neustále vzdělávat v moderních technologiích a sledovat aktuální trendy v oboru.",
