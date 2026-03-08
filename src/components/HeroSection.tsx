@@ -126,6 +126,9 @@ export default function HeroSection({ lang }: { lang: 'en' | 'cs' }) {
                 alt="Profile"
                 className="w-48 md:w-60 rounded-full relative ring-2 ring-purple-500/50"
                 style={{ objectFit: "cover" }}
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
               />
             </div>
           </motion.div>

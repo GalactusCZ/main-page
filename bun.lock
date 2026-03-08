@@ -6,6 +6,7 @@
       "name": "main-page",
       "dependencies": {
         "@astrojs/react": "^4.4.2",
+        "@fontsource-variable/inter": "^5.2.8",
         "@iconify-json/lucide": "^1.2.96",
         "@iconify/react": "^6.0.2",
         "@radix-ui/react-slot": "^1.2.4",
@@ -131,6 +132,8 @@
     "@esbuild/win32-ia32": ["@esbuild/win32-ia32@0.27.3", "", { "os": "win32", "cpu": "ia32" }, "sha512-QLKSFeXNS8+tHW7tZpMtjlNb7HKau0QDpwm49u0vUp9y1WOF+PEzkU84y9GqYaAVW8aH8f3GcBck26jh54cX4Q=="],
 
     "@esbuild/win32-x64": ["@esbuild/win32-x64@0.27.3", "", { "os": "win32", "cpu": "x64" }, "sha512-4uJGhsxuptu3OcpVAzli+/gWusVGwZZHTlS63hh++ehExkVT8SgiEf7/uC/PclrPPkLhZqGgCTjd0VWLo6xMqA=="],
+
+    "@fontsource-variable/inter": ["@fontsource-variable/inter@5.2.8", "", {}, "sha512-kOfP2D+ykbcX/P3IFnokOhVRNoTozo5/JxhAIVYLpea/UBmCQ/YWPBfWIDuBImXX/15KH+eKh4xpEUyS2sQQGQ=="],
 
     "@iconify-json/lucide": ["@iconify-json/lucide@1.2.96", "", { "dependencies": { "@iconify/types": "*" } }, "sha512-EICTusj67lvSmEaH/Lhe68ZyzcgfcPNpY00exAOkoo+z2fnLeNy31mdE3E/4/q8WjzZrICAZDxY3d6j7LzkgNA=="],
 
