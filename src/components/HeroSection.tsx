@@ -1,5 +1,5 @@
 import { personalInfo } from "@/lib/data";
-import { Mail, Github, MapPin, Linkedin } from "lucide-react";
+import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 
@@ -40,15 +40,14 @@ export default function HeroSection() {
               className="text-4xl font-bold mb-2"
               variants={childVariants}
             >
-              {personalInfo.name}{" "}
-              <span className="inline-block animate-pulse">✨</span>
+              {personalInfo.name}
             </motion.h1>
 
             <motion.p
               className="text-xl text-muted-foreground mb-6"
               variants={childVariants}
             >
-              Software Engineer 👨‍💻
+              Computer Science Student
             </motion.p>
 
             <motion.div
@@ -60,8 +59,8 @@ export default function HeroSection() {
                 variants={childVariants}
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
-                <MapPin className="h-4 w-4 mr-2" />
-                📍 {personalInfo.location}
+                <Icon icon="lucide:map-pin" className="h-4 w-4 mr-2" />
+                {personalInfo.location}
               </motion.div>
 
               <motion.a
@@ -70,8 +69,8 @@ export default function HeroSection() {
                 variants={childVariants}
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
-                <Mail className="h-4 w-4 mr-2" />
-                ✉️ {personalInfo.email}
+                <Icon icon="lucide:mail" className="h-4 w-4 mr-2" />
+                {personalInfo.email}
               </motion.a>
 
               <motion.a
@@ -82,8 +81,8 @@ export default function HeroSection() {
                 variants={childVariants}
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
-                <Github className="h-4 w-4 mr-2" />
-                🌟 GitHub
+                <Icon icon="lucide:github" className="h-4 w-4 mr-2" />
+                GitHub
               </motion.a>
 
               <motion.a
@@ -94,8 +93,8 @@ export default function HeroSection() {
                 variants={childVariants}
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
-                <Linkedin className="h-4 w-4 mr-2" />
-                🔗 LinkedIn
+                <Icon icon="lucide:linkedin" className="h-4 w-4 mr-2" />
+                LinkedIn
               </motion.a>
             </motion.div>
           </div>

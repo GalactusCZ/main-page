@@ -17,7 +17,7 @@ export default function Footer() {
             whileHover={{ scale: 1.01 }}
           >
             &copy; {new Date().getFullYear()} {personalInfo.name}. All rights
-            reserved. ✨
+            reserved.
           </motion.p>
           <motion.p
             className="text-sm text-muted-foreground mt-2 md:mt-0 text-center md:text-left"
@@ -27,29 +27,22 @@ export default function Footer() {
             viewport={{ once: true }}
             whileHover={{ scale: 1.01 }}
           >
-            Built with{" "}
-            <motion.span
-              className="inline-block"
-              initial={{ rotate: 0 }}
-              whileHover={{ rotate: 360 }}
-              transition={{ duration: 0.5 }}
+            Built with a{" "}
+            <motion.a
+              href={`https://astro.build/themes/details/modern-developer-portfolio-template/`}
+              className="inline-flex items-center text-muted-foreground hover:text-foreground transition-colors"
+              whileHover={{ scale: 1.05, color: "#4b5563" }}
             >
-              💻
-            </motion.span>{" "}
-            and{" "}
-            <motion.span
-              className="inline-block"
-              animate={{
-                scale: [1, 1.2, 1],
-              }}
-              transition={{
-                repeat: Infinity,
-                repeatType: "reverse",
-                duration: 1.5,
-              }}
+              Template
+            </motion.a>
+            {" "}made by{" "}
+            <motion.a
+              href={`https://astro.build/themes/author/2185`}
+              className="inline-flex items-center text-muted-foreground hover:text-foreground transition-colors"
+              whileHover={{ scale: 1.05, color: "#4b5563" }}
             >
-              ❤️
-            </motion.span>
+              Rikesh S
+            </motion.a>
           </motion.p>
         </motion.div>
       </div>

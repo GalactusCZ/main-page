@@ -1,4 +1,4 @@
-import { Moon, Sun } from "lucide-react";
+import { Icon } from "@iconify/react";
 import { Button } from "./button";
 import { useEffect, useState } from "react";
 
@@ -26,9 +26,9 @@ export default function ThemeToggle() {
       className="rounded-full cursor-pointer"
     >
       {theme === "light" ? (
-        <Moon className="h-5 w-5" />
+        <Icon icon="lucide:moon" className="h-5 w-5" />
       ) : (
-        <Sun className="h-5 w-5" />
+        <Icon icon="lucide:sun" className="h-5 w-5" />
       )}
       <span className="sr-only">Toggle theme</span>
     </Button>

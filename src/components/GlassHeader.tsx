@@ -1,7 +1,7 @@
 import ThemeToggle from "./ui/theme-toggle";
 import { personalInfo } from "@/lib/data";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Icon } from "@iconify/react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function GlassHeader() {
@@ -18,12 +18,12 @@ export default function GlassHeader() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          ✨ {personalInfo.name}
+          {personalInfo.name}
         </motion.a>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
-          {["experience", "skills", "projects", "awards", "education"].map(
+          {["experience", "education", "skills", "projects"].map(
             (item, index) => (
               <motion.a
                 key={item}
@@ -34,11 +34,11 @@ export default function GlassHeader() {
                 transition={{ duration: 0.2, delay: index * 0.1 }}
                 whileHover={{ y: -2 }}
               >
-                {item === "experience" && "💼 "}
-                {item === "skills" && "🛠️ "}
-                {item === "projects" && "🚀 "}
-                {item === "awards" && "🏆 "}
-                {item === "education" && "🎓 "}
+                {item === "experience" && " "}
+                {item === "education" && " "}
+                {item === "skills" && " "}
+                {item === "projects" && " "}
+                {item === "awards" && " "}
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </motion.a>
             )
@@ -55,7 +55,7 @@ export default function GlassHeader() {
             aria-label="Toggle menu"
             whileTap={{ scale: 0.95 }}
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <Icon icon="lucide:x" /> : <Icon icon="lucide:menu" />}
           </motion.button>
         </div>
       </div>
@@ -71,7 +71,7 @@ export default function GlassHeader() {
             transition={{ duration: 0.3 }}
           >
             <nav className="flex flex-col space-y-4 text-sm font-medium">
-              {["experience", "skills", "projects", "awards", "education"].map(
+              {["experience", "education", "skills", "projects"].map(
                 (item, index) => (
                   <motion.a
                     key={item}
@@ -82,11 +82,11 @@ export default function GlassHeader() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.2, delay: index * 0.1 }}
                   >
-                    {item === "experience" && "💼 "}
-                    {item === "skills" && "🛠️ "}
-                    {item === "projects" && "🚀 "}
-                    {item === "awards" && "🏆 "}
-                    {item === "education" && "🎓 "}
+                    {item === "experience" && " "}
+                    {item === "education" && " "}
+                    {item === "skills" && " "}
+                    {item === "projects" && " "}
+                    {item === "awards" && " "}
                     {item.charAt(0).toUpperCase() + item.slice(1)}
                   </motion.a>
                 )

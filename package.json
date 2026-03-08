@@ -16,6 +16,8 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
+    "@iconify-json/lucide": "^1.2.96",
+    "@iconify/react": "^6.0.2",
     "@radix-ui/react-slot": "^1.2.4",
     "@tailwindcss/vite": "^4.2.1",
     "@types/react": "^19.2.14",
@@ -25,7 +27,6 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.35.1",
-    "lucide-react": "^0.483.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "tailwind-merge": "^3.5.0",
