@@ -14,6 +14,18 @@ const { title = "Michael H - Portfolio", description = "I enjoy working on IT pr
 <!doctype html>
 <html lang="en">
   <head>
+    <script is:inline>
+      if (localStorage.getItem("preferred-language-set")) return;
+
+      const path = window.location.pathname;
+      const browserLang = navigator.language || navigator.userLanguage;
+      const isCzechBrowser = browserLang.startsWith('cs');
+      const isCurrentlyCsPath = path.startsWith('/cs');
+
+      if (isCzechBrowser && !isCurrentlyCsPath) {
+        window.location.pathname = '/cs' + (path === '/' ? '' : path);
+      }
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />

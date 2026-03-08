@@ -19,6 +19,7 @@ export default function ThemeToggle() {
       newPath = `/cs${currentPath === "/" ? "" : currentPath}`;
     }
 
+    localStorage.setItem("preferred-language-set", "true");
     window.location.href = newPath;
   }
 
