@@ -1,10 +1,13 @@
-import { education } from "@/lib/data";
+import { ui, education } from "@/lib/data";
 import TimelineItem from "./TimelineItem";
 import { Icon } from "@iconify/react";
 import MotionWrapper from "./MotionWrapper";
 import { motion } from "framer-motion";
 
-export default function EducationSection() {
+export default function EducationSection({ lang }: { lang: 'cs' | 'en' }) {
+  const data = education.map(edu => edu[lang]);
+  const uiData = ui[lang];
+
   return (
     <section
       id="education"
@@ -13,18 +16,18 @@ export default function EducationSection() {
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
         <MotionWrapper>
           <h2 className="text-2xl font-bold mb-8 text-center md:text-left">
-            Education
+            {uiData.education}
           </h2>
         </MotionWrapper>
 
         <div className="mb-8">
-          {education.map((edu, index) => (
+          {data.map((edu, index) => (
             <TimelineItem
               key={edu.institution}
               title={`${edu.degree}`}
               subtitle={`${edu.institution}`}
               date={`${edu.period}`}
-              isLast={index === education.length - 1}
+              isLast={index === data.length - 1}
               index={index}
             >
               <p className="text-sm text-muted-foreground mb-3">
@@ -44,7 +47,7 @@ export default function EducationSection() {
                       <Icon icon="lucide:award" className="h-4 w-4 text-purple-500" />
                     </div>
                     <h4 className="text-sm font-medium">
-                      Achievements & Activities
+                      {uiData.achievementsActivities}
                     </h4>
                   </div>
                   <ul className="list-none ml-4 space-y-2 text-sm">

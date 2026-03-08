@@ -1,5 +1,5 @@
 import React from "react";
-import { skills } from "@/lib/data";
+import { ui, skills } from "@/lib/data";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 import { GlassCard } from "./ui/glass-card";
@@ -44,7 +44,9 @@ const skillCategoryVariants = {
   },
 };
 
-export default function SkillsSection() {
+export default function SkillsSection({ lang }: { lang: 'cs' | 'en' }) {
+  const uiData = ui[lang];
+
   return (
     <section
       id="skills"
@@ -53,7 +55,7 @@ export default function SkillsSection() {
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
         <MotionWrapper>
           <h2 className="text-2xl font-bold mb-8 text-center md:text-left">
-            Skills
+            {uiData.skills}
           </h2>
         </MotionWrapper>
 
@@ -67,7 +69,7 @@ export default function SkillsSection() {
           <motion.div variants={skillCategoryVariants}>
             <GlassCard className="p-4">
               <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
-                Programming Languages
+                {uiData.programmingLanguages}
               </h3>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {skills.programmingLanguages.map((skill, index) => (
@@ -80,7 +82,7 @@ export default function SkillsSection() {
           <motion.div variants={skillCategoryVariants}>
             <GlassCard className="p-4">
               <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
-                Frontend Development
+                {uiData.frontendDevelopment}
               </h3>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {skills.frontendDevelopment.map((skill, index) => (
@@ -93,7 +95,7 @@ export default function SkillsSection() {
           <motion.div variants={skillCategoryVariants}>
             <GlassCard className="p-4">
               <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
-                Backend Development
+                {uiData.backendDevelopment}
               </h3>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {skills.backendDevelopment.map((skill, index) => (
@@ -106,7 +108,7 @@ export default function SkillsSection() {
           <motion.div variants={skillCategoryVariants}>
             <GlassCard className="p-4">
               <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
-                Database & Storage
+                {uiData.databaseStorage}
               </h3>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {skills.databaseAndStorage.map((skill, index) => (
@@ -119,7 +121,7 @@ export default function SkillsSection() {
           {/* <motion.div variants={skillCategoryVariants}>
             <GlassCard className="p-4">
               <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
-                Cloud & DevOps
+                {uiData.cloudDevOps}
               </h3>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {skills.cloudAndDevOps.map((skill, index) => (
@@ -132,7 +134,7 @@ export default function SkillsSection() {
           <motion.div variants={skillCategoryVariants}>
             <GlassCard className="p-4">
               <h3 className="text-lg font-medium mb-3 text-center md:text-left flex items-center">
-                Tools & Services
+                {uiData.toolsServices}
               </h3>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {skills.toolsAndServices.map((skill, index) => (

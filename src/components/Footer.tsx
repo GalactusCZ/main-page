@@ -1,7 +1,10 @@
-import { personalInfo } from "@/lib/data";
+import { ui, personalInfo } from "@/lib/data";
 import { motion } from "framer-motion";
 
-export default function Footer() {
+export default function Footer({ lang }: { lang: 'cs' | 'en' }) {
+  const data = personalInfo[lang];
+  const uiData = ui[lang];
+
   return (
     <footer className="border-t border-purple-500/10 py-6 bg-gradient-to-b from-background to-muted/20 backdrop-blur-sm">
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
@@ -16,8 +19,7 @@ export default function Footer() {
             className="text-sm text-muted-foreground text-center md:text-left"
             whileHover={{ scale: 1.01 }}
           >
-            &copy; {new Date().getFullYear()} {personalInfo.name}. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} {data.name}. {uiData.rights}
           </motion.p>
           <motion.p
             className="text-sm text-muted-foreground mt-2 md:mt-0 text-center md:text-left"
@@ -27,7 +29,7 @@ export default function Footer() {
             viewport={{ once: true }}
             whileHover={{ scale: 1.01 }}
           >
-            Built with a{" "}
+            {uiData.built}{" "}
             <motion.a
               href={`https://astro.build/themes/details/modern-developer-portfolio-template/`}
               className="inline-flex items-center text-muted-foreground hover:text-foreground transition-colors"
@@ -35,7 +37,7 @@ export default function Footer() {
             >
               Template
             </motion.a>
-            {" "}made by{" "}
+            {" "}{uiData.madeBy}{" "}
             <motion.a
               href={`https://astro.build/themes/author/2185`}
               className="inline-flex items-center text-muted-foreground hover:text-foreground transition-colors"

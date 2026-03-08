@@ -1,10 +1,13 @@
-import { workExperience } from "@/lib/data";
+import { ui, workExperience } from "@/lib/data";
 import TimelineItem from "./TimelineItem";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 
-export default function ExperienceSection() {
+export default function ExperienceSection({ lang }: { lang: 'cs' | 'en' }) {
+  const data = workExperience.map(job => job[lang]);
+  const uiData = ui[lang];
+
   return (
     <section
       id="experience"
@@ -13,17 +16,17 @@ export default function ExperienceSection() {
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
         <MotionWrapper>
           <h2 className="text-2xl font-bold mb-8 text-center md:text-left flex items-center md:inline-block">
-            Work Experience
+            {uiData.experience}
           </h2>
         </MotionWrapper>
         <div className="mb-8">
-          {workExperience.map((job, index) => (
+          {data.map((job, index) => (
             <TimelineItem
               key={job.company + job.period}
               title={`${job.position} | ${job.company}`}
               subtitle={`${job.location}`}
               date={`${job.period}`}
-              isLast={index === workExperience.length - 1}
+              isLast={index === data.length - 1}
               index={index}
             >
               <motion.div
@@ -37,7 +40,7 @@ export default function ExperienceSection() {
                   <div className="h-6 w-6 flex items-center justify-center rounded-full bg-purple-500/10 mr-2">
                     <Icon icon="lucide:briefcase" className="h-4 w-4 text-purple-500" />
                   </div>
-                  <h4 className="text-sm font-medium">Key Achievements</h4>
+                  <h4 className="text-sm font-medium">{uiData.keyPoints}</h4>
                 </div>
                 <ul className="list-none ml-4 space-y-2 text-sm">
                   {job.achievements.map((achievement, i) => (

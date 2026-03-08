@@ -1,10 +1,20 @@
 import ThemeToggle from "./ui/theme-toggle";
-import { personalInfo } from "@/lib/data";
+import LanguageToggle from "./ui/language-toggle";
+import { ui, personalInfo } from "@/lib/data";
 import { useState } from "react";
 import { Icon } from "@iconify/react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function GlassHeader() {
+export default function GlassHeader({ lang }: { lang: 'cs' | 'en' }) {
+  const data = personalInfo[lang];
+  const uiData = ui[lang];
+  const itemIndexing = [
+    "experience",
+    "education",
+    "skills",
+    "projects",
+    "awards",
+  ];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -18,27 +28,27 @@ export default function GlassHeader() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          {personalInfo.name}
+          {data.name}
         </motion.a>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
-          {["experience", "education", "skills", "projects"].map(
+          {[uiData.experience, uiData.education, uiData.skills, uiData.projects].map(
             (item, index) => (
               <motion.a
                 key={item}
-                href={`#${item}`}
+                href={`#${itemIndexing[index]}`}
                 className="transition-colors hover:text-foreground/80 text-foreground/60"
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.2, delay: index * 0.1 }}
                 whileHover={{ y: -2 }}
               >
-                {item === "experience" && " "}
-                {item === "education" && " "}
-                {item === "skills" && " "}
-                {item === "projects" && " "}
-                {item === "awards" && " "}
+                {item === uiData.experience && " "}
+                {item === uiData.education && " "}
+                {item === uiData.skills && " "}
+                {item === uiData.projects && " "}
+                {item === uiData.awards && " "}
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </motion.a>
             )
@@ -46,6 +56,7 @@ export default function GlassHeader() {
         </nav>
 
         <div className="flex items-center space-x-2">
+          <LanguageToggle />
           <ThemeToggle />
 
           {/* Mobile Menu Button */}
@@ -71,22 +82,22 @@ export default function GlassHeader() {
             transition={{ duration: 0.3 }}
           >
             <nav className="flex flex-col space-y-4 text-sm font-medium">
-              {["experience", "education", "skills", "projects"].map(
+              {[uiData.experience, uiData.education, uiData.skills, uiData.projects].map(
                 (item, index) => (
                   <motion.a
                     key={item}
-                    href={`#${item}`}
+                    href={`#${itemIndexing[index]}`}
                     className="transition-colors hover:text-foreground/80 text-foreground/60 py-2"
                     onClick={toggleMenu}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.2, delay: index * 0.1 }}
                   >
-                    {item === "experience" && " "}
-                    {item === "education" && " "}
-                    {item === "skills" && " "}
-                    {item === "projects" && " "}
-                    {item === "awards" && " "}
+                    {item === uiData.experience && " "}
+                    {item === uiData.education && " "}
+                    {item === uiData.skills && " "}
+                    {item === uiData.projects && " "}
+                    {item === uiData.awards && " "}
                     {item.charAt(0).toUpperCase() + item.slice(1)}
                   </motion.a>
                 )
