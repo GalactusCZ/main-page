@@ -13,14 +13,14 @@ const lang = Astro.currentLocale === 'cs' ? 'cs' : 'en';
 ---
 
 <Layout>
-  <GlassHeader lang={lang} client:only="react" />
+  <GlassHeader lang={lang} client:load />
   <main class="min-h-screen">
-    <HeroSection lang={lang} client:only="react" />
-    <ExperienceSection lang={lang} client:only="react" />
-    <EducationSection lang={lang} client:only="react" />
-    <SkillsSection lang={lang} client:only="react" />
-    <ProjectsSection lang={lang} client:only="react" />
-    <!-- <AwardsSection lang={lang} client:only="react" /> -->
+    <HeroSection lang={lang} client:load />
+    <ExperienceSection lang={lang} client:load />
+    <EducationSection lang={lang} client:load />
+    <SkillsSection lang={lang} client:load />
+    <ProjectsSection lang={lang} client:load />
+    <!-- <AwardsSection lang={lang} client:load /> -->
   </main>
-  <Footer lang={lang} client:only="react" />
+  <Footer lang={lang} client:load />
 </Layout>
