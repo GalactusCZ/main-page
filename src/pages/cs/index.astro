@@ -1,0 +1,26 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import GlassHeader from "@/components/GlassHeader";
+import HeroSection from "@/components/HeroSection";
+import ExperienceSection from "@/components/ExperienceSection";
+import SkillsSection from "@/components/SkillsSection";
+import ProjectsSection from "@/components/ProjectsSection";
+import AwardsSection from "@/components/AwardsSection";
+import EducationSection from "@/components/EducationSection";
+import Footer from "@/components/Footer";
+
+const lang = Astro.currentLocale === 'cs' ? 'cs' : 'en';
+---
+
+<Layout>
+  <GlassHeader lang={lang} client:only="react" />
+  <main class="min-h-screen">
+    <HeroSection lang={lang} client:only="react" />
+    <ExperienceSection lang={lang} client:only="react" />
+    <EducationSection lang={lang} client:only="react" />
+    <SkillsSection lang={lang} client:only="react" />
+    <ProjectsSection lang={lang} client:only="react" />
+    <!-- <AwardsSection lang={lang} client:only="react" /> -->
+  </main>
+  <Footer lang={lang} client:only="react" />
+</Layout>
