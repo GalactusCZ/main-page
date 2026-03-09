@@ -64,7 +64,7 @@ export const personalInfo = {
     resumeLink: "https://michael-hruby.eu/michael-hruby-czech.pdf",
     profilePicture: "/profile.webp",
     heroDescription:
-      "Nadšený student Programování a Vývoje Aplikací na Masarykově univerzitě. Rád pracuji na IT projektech zaměřených na vývoj webů a her. Baví mě se neustále vzdělávat v moderních technologiích a sledovat aktuální trendy v oboru.",
+      "Jsem nadšený student Programování a Vývoje Aplikací na Masarykově univerzitě. Rád pracuji na IT projektech zaměřených na vývoj webů a her. Baví mě se neustále vzdělávat v moderních technologiích a sledovat aktuální trendy v oboru.",
   }
 };
 
@@ -107,7 +107,7 @@ export const workExperience = [
       position: "Průvodce",
       period: "Červenec 2020 - Nyní",
       achievements: [
-        "Provádění skupin turistů skrze hrad Bouzov v doprovodu výkladu o jeho historii.",
+        "Provádění skupin turistů hradem Bouzov v doprovodu výkladu o jeho historii.",
       ],
     },
   },
@@ -149,7 +149,7 @@ export const workExperience = [
       position: "Praxe",
       period: "Říjen 2022",
       achievements: [
-        "Pomáhání s úlohami, se kterými se firemní IT zaměstnanec setkává na denní bázi.",
+        "Pomoc s úlohami, se kterými se firemní IT zaměstnanec setkává na denní bázi.",
       ],
     },
   },
