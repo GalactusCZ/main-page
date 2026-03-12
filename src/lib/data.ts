@@ -44,7 +44,7 @@ export const personalInfo = {
     name: "Michael Hrubý",
     about: "Computer Science Student",
     location: "Czech Republic",
-    email: "galactus2121@gmail.com",
+    email: "michael-hruby@seznam.cz",
     github: "https://github.com/GalactusCZ",
     linkedin: "https://www.linkedin.com/in/michael-hrub%C3%BD-b3a0542a8/",
     resume: "Resume",
@@ -57,7 +57,7 @@ export const personalInfo = {
     name: "Michael Hrubý",
     about: "Student Informačních Technologií",
     location: "Česká republika",
-    email: "galactus2121@gmail.com",
+    email: "michael-hruby@seznam.cz",
     github: "https://github.com/GalactusCZ",
     linkedin: "https://www.linkedin.com/in/michael-hrub%C3%BD-b3a0542a8/",
     resume: "Životopis",
@@ -118,7 +118,7 @@ export const workExperience = [
       position: "Lector of Programming",
       period: "August 2024 - June 2025",
       achievements: [
-        "Teaching kids about the basics of programming in the Scoolcode enviromnent.",
+        "Teaching kids about the basics of programming in the Scoolcode environment.",
         "Finding ways to present basic programming ideas to beginners.",
       ],
     },
@@ -146,7 +146,7 @@ export const workExperience = [
     cs: {
       company: "Logaritma s.r.o.",
       location: "Moravičany",
-      position: "Praxe",
+      position: "Praktikant",
       period: "Říjen 2022",
       achievements: [
         "Pomoc s úlohami, se kterými se firemní IT zaměstnanec setkává na denní bázi.",
@@ -184,7 +184,7 @@ export const education = [
       period: "2024 - Present",
       achievements: [
         "A committee member of the Friends of Nordic Animals Association.",
-        "Organizing numerous events and competitions to get more highschoolers interested in Computer Science.",
+        "Organising numerous events and competitions to get more high schoolers interested in Computer Science.",
       ],
     },
     cs: {

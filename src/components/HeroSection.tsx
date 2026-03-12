@@ -76,6 +76,16 @@ export default function HeroSection({ lang }: { lang: 'en' | 'cs' }) {
               </motion.a>
 
               <motion.a
+                href={`tel:+420732322033`}
+                className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
+                variants={childVariants}
+                whileHover={{ scale: 1.05, color: "#4b5563" }}
+              >
+                <Icon icon="lucide:phone-call" className="h-4 w-4 mr-2" />
+                +420 732 322 033
+              </motion.a>
+
+              <motion.a
                 href={data.github}
                 target="_blank"
                 rel="noopener noreferrer"
