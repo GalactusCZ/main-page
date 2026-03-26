@@ -237,7 +237,7 @@ export const projects = [
       github: "https://github.com/GalactusCZ/realrtcw-czech",
       description: [
         "Translating all cutscenes, menus and subtitles.",
-        "Recreating the full dubbing with the help of Fénix ProDaging.",
+        "Recreating the full dubbing with the help of Fénix ProDabing.",
         "Getting everything tested with the help of Jouklik and KillerSlovakia.",
       ],
     },
