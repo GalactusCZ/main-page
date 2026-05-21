@@ -71,6 +71,26 @@ export const personalInfo = {
 export const workExperience = [
   {
     en: {
+      company: "Lexical Computing CZ s.r.o.",
+      location: "Brno",
+      position: "Junior System Administrator",
+      period: "April 2026 - Present",
+      achievements: [
+        "Maintaining and improving the Hardware and Software infrastructure of the company."
+      ],
+    },
+    cs: {
+      company: "Lexical Computing CZ s.r.o.",
+      location: "Brno",
+      position: "Junior Správce Systému",
+      period: "Duben 2026 - Nyní",
+      achievements: [
+        "Správa a údržba firemní hardwarové a softwarové infrastruktury.",
+      ],
+    },
+  },
+  {
+    en: {
       company: "Greatlink",
       location: "Brno",
       position: "QA Tester",
