@@ -1,14 +1,10 @@
 import { Icon } from "@iconify/react";
 import { Button } from "./button";
 
-export default function ThemeToggle() {
-  const isClient = typeof window !== 'undefined';
-
-  const isCs = isClient ? window.location.pathname.startsWith('/cs') : false;
+export default function LanguageToggle({ lang }: { lang: 'cs' | 'en' }) {
+  const isCs = lang === 'cs';
 
   const toggleLanguage = () => {
-    if (!isClient) return;
-
     const currentPath = window.location.pathname;
     let newPath = "";
 

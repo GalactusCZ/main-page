@@ -15,15 +15,15 @@ const { title = "Michael H - Portfolio", description = "I enjoy working on IT pr
 <html lang="en">
   <head>
     <script is:inline>
-      if (localStorage.getItem("preferred-language-set")) return;
+      if (!localStorage.getItem("preferred-language-set")) {
+        const path = window.location.pathname;
+        const browserLang = navigator.language || navigator.userLanguage;
+        const isCzechBrowser = browserLang.startsWith('cs');
+        const isCurrentlyCsPath = path.startsWith('/cs');
 
-      const path = window.location.pathname;
-      const browserLang = navigator.language || navigator.userLanguage;
-      const isCzechBrowser = browserLang.startsWith('cs');
-      const isCurrentlyCsPath = path.startsWith('/cs');
-
-      if (isCzechBrowser && !isCurrentlyCsPath) {
-        window.location.pathname = '/cs' + (path === '/' ? '' : path);
+        if (isCzechBrowser && !isCurrentlyCsPath) {
+          window.location.pathname = '/cs' + (path === '/' ? '' : path);
+        }
       }
     </script>
     <meta charset="UTF-8" />

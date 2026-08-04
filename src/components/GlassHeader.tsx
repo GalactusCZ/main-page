@@ -56,7 +56,7 @@ export default function GlassHeader({ lang }: { lang: 'cs' | 'en' }) {
         </nav>
 
         <div className="flex items-center space-x-2">
-          <LanguageToggle />
+          <LanguageToggle lang={lang} />
           <ThemeToggle />
 
           {/* Mobile Menu Button */}
