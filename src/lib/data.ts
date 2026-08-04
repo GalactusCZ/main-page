@@ -273,10 +273,10 @@ export const projects = [
   },
   {
     en: {
-      title: "Home Server",
+      title: "Home Lab",
       github: "https://github.com/GalactusCZ/main-page",
       description: [
-        "Using Raspberry PI 4B (8GB RAM model) as hardware.",
+        "Using Raspberry PI 5 (16GB RAM model) as hardware.",
         "Hosting services: Cosmos Cloud, Nextcloud, Vaultwarden, Stirling-PDF, Plex, qBittorrent, SearXNG, Memos, Tailscale and my personal website.",
         "Exposing services to Internet through Cloudflare tunnels and the michael-hruby.eu domain.",
       ],
@@ -285,7 +285,7 @@ export const projects = [
       title: "Domácí Server",
       github: "https://github.com/GalactusCZ/main-page",
       description: [
-        "Jako hardware jsem použil Raspberry PI 4B (8GB RAM model).",
+        "Jako hardware jsem použil Raspberry PI 5 (16GB RAM model).",
         "Na serveru hostuji: Cosmos Cloud, Nextcloud, Vaultwarden, Stirling-PDF, Plex, qBittorrent, SearXNG, Memos, Tailscale a svou osobní webovou stránku.",
         "K Internetu služby připojuji skrz Cloudflare tunely a svou michael-hruby.eu doménu.",
       ],
