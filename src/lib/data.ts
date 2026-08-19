@@ -91,28 +91,6 @@ export const workExperience = [
   },
   {
     en: {
-      company: "Greatlink",
-      location: "Brno",
-      position: "QA Tester",
-      period: "May 2025 - Present",
-      achievements: [
-        "Writing unit and smoke tests in C++ for games developed in Unreal Engine 5.",
-        "Working for clients such as MADFINGER Games."
-      ],
-    },
-    cs: {
-      company: "Greatlink",
-      location: "Brno",
-      position: "QA Tester",
-      period: "Květen 2025 - Nyní",
-      achievements: [
-        "Psaní unit a smoke testů v jazyce C++ pro hry vyvíjené v Unreal Engine 5.",
-        "Práce pro klienty jako např. MADFINGER Games.",
-      ],
-    },
-  },
-  {
-    en: {
       company: "National Heritage Institute",
       location: "Bouzov",
       position: "Castle Guide",
@@ -128,6 +106,28 @@ export const workExperience = [
       period: "Červenec 2020 - Nyní",
       achievements: [
         "Provádění skupin turistů hradem Bouzov v doprovodu výkladu o jeho historii.",
+      ],
+    },
+  },
+  {
+    en: {
+      company: "Greatlink",
+      location: "Brno",
+      position: "QA Tester",
+      period: "May 2025 - August 2026",
+      achievements: [
+        "Writing unit and smoke tests in C++ for games developed in Unreal Engine 5.",
+        "Working for clients such as MADFINGER Games."
+      ],
+    },
+    cs: {
+      company: "Greatlink",
+      location: "Brno",
+      position: "QA Tester",
+      period: "Květen 2025 - Srpen 2026",
+      achievements: [
+        "Psaní unit a smoke testů v jazyce C++ pro hry vyvíjené v Unreal Engine 5.",
+        "Práce pro klienty jako např. MADFINGER Games.",
       ],
     },
   },
