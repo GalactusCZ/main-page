@@ -1,3 +1,9 @@
 {
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Michael Hrubý",
+    "identifier": "michael-hruby.eu",
+    "documentationUrl": "https://michael-hruby.eu/"
+  },
   "entries": []
 }
